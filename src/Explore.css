@@ -1,0 +1,18 @@
+.top-button {
+  font-size: 12px;
+  margin-right: 8px;
+  line-height: 8px;
+  padding: 8px;
+}
+
+.items {
+  align-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item {
+  margin-bottom: 20px;
+  width: 45%;
+}
