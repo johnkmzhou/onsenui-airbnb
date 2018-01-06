@@ -4,9 +4,15 @@ import { Page, SearchInput, Button, Card } from 'react-onsenui';
 import 'onsenui/css/onsenui.css';
 import 'onsenui/css/onsen-css-components.css';
 
+import { Homes } from './Homes';
+import { Experiences } from './Experiences';
 import './Explore.css';
 
-export const Explore = () => {
+export const Explore = props => {
+  const pushHomesPage = event => props.navigator.pushPage({ component: Homes, props: { key: 'homes' } });
+
+  const pushExperiencesPage = event => props.navigator.pushPage({ component: Experiences, props: { key: 'experiences' } });
+
   const renderExperiences = () => Array(4).fill(
     <div className="item">
       <img src={"https://placeimg.com/720/480/nature?9"} style={{ width: '100%' }} alt="experiences" />
@@ -43,17 +49,17 @@ export const Explore = () => {
         <section>
           <h2 style={{ fontWeight: 'bold' }}>Explore Airbnb</h2>
           <div style={{ display: 'flex' }}>
-            <Card style={{ marginLeft: 0, width: '45%' }}>
+            <Card style={{ marginLeft: 0, width: '45%' }} onClick={pushHomesPage}>
               <img src={"https://placeimg.com/720/480/arch?4"} style={{ width: '100%' }} alt="homes" />
-              <div className="title">
+              <span style={{ fontWeight: 'bold' }}>
                 Homes
-          </div>
+              </span>
             </Card>
-            <Card style={{ width: '45%' }}>
+            <Card style={{ width: '45%' }} onClick={pushExperiencesPage}>
               <img src={"https://placeimg.com/720/480/nature?1"} style={{ width: '100%' }} alt="experiences" />
-              <div className="title">
+              <span style={{ fontWeight: 'bold' }}>
                 Experiences
-          </div>
+              </span>
             </Card>
           </div>
         </section>
