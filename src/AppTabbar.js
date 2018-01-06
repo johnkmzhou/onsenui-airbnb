@@ -5,6 +5,7 @@ import 'onsenui/css/onsenui.css';
 import 'onsenui/css/onsen-css-components.css';
 
 import { Explore } from './Explore';
+import {Saved} from './Saved';
 
 export const AppTabbar = props => {
   const renderTabs = navigator => [
@@ -13,7 +14,7 @@ export const AppTabbar = props => {
       tab: <Tab key="explore" label="Explore" icon="md-search" />
     },
     {
-      content: <Page key="saved" navigator={props.navigator} />,
+      content: <Saved key="saved" navigator={props.navigator} />,
       tab: <Tab key="saved" label="Saved" icon="md-favorite-outline" />
     },
     {
