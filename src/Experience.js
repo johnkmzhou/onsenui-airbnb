@@ -17,11 +17,11 @@ export const Experience = () => {
           <span style={{ fontWeight: 'bold' }} >$80</span> per person<br />200 reviews
         </div>
       </div >
-      <div style={{ width: '50%' }}><Button className="bottom-button">Back</Button></div>
+      <div style={{ width: '50%' }}><Button className="bottom-button">See dates</Button></div>
     </BottomToolbar >;
 
   return (
-    <Page id="Experience" renderToolbar={renderToolbar} renderBottomToolbar={renderBottomToolbar}>
+    <Page renderToolbar={renderToolbar} renderBottomToolbar={renderBottomToolbar}>
       <section className="experience-bg">
         <div className="experience-bg-text">
           <span style={{ fontSize: 10 }}>FOOD AND DRINKS</span>
