@@ -1,0 +1,13 @@
+.symbol {
+  background-color: mediumseagreen;
+  border-radius: 50%;
+  height: 150px;
+  margin: 20px auto;
+  width: 150px;
+}
+
+.symbol-icon {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}

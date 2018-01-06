@@ -1,5 +1,5 @@
 import React from 'react';
-import { Page, Toolbar, BottomToolbar, BackButton, Button } from 'react-onsenui';
+import { Page, Toolbar, BottomToolbar, BackButton, Button, Icon } from 'react-onsenui';
 
 import './Experience.css';
 
@@ -27,10 +27,10 @@ export const Experience = () => {
           <span style={{ fontSize: 10 }}>FOOD AND DRINKS</span>
           <br />
           <span style={{ fontSize: 24, fontWeight: 'bold' }}>Beer Walking Tour</span>
-          <p><ons-icon icon="md-pin"></ons-icon> AMSTERDAM</p>
-          <p><ons-icon icon="md-time"></ons-icon> 4 hours total</p>
-          <p><ons-icon icon="md-calendar-note"></ons-icon> Cost of food and beer included</p>
-          <p><ons-icon icon="md-comments"></ons-icon> Offered in English</p>
+          <p><Icon icon="md-pin"></Icon> AMSTERDAM</p>
+          <p><Icon icon="md-time"></Icon> 4 hours total</p>
+          <p><Icon icon="md-calendar-note"></Icon> Cost of food and beer included</p>
+          <p><Icon icon="md-comments"></Icon> Offered in English</p>
         </div>
       </section>
       <section style={{ margin: 20 }}>
