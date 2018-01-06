@@ -1,0 +1,31 @@
+.experience-bg {
+  background-image: url('https://placeimg.com/720/480/nature?9');
+  height: 480px;
+  position: relative;
+}
+
+.experience-bg-text {
+  bottom: 0;
+  color: white;
+  margin: 20px; 
+  position: absolute; 
+}
+
+.profile-pic {
+  border-radius: 4px;
+  float: right;
+}
+
+.bottom-text {
+  font-size: 14px;
+  margin: 5px 50px;
+}
+
+.bottom-button {
+  font-size: 14px;
+  line-height: 8px;
+  padding: 12px;
+  text-align: center;
+  margin: 5px 20px;
+  width: 70%;
+}

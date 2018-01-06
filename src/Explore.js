@@ -6,6 +6,7 @@ import 'onsenui/css/onsen-css-components.css';
 
 import { Homes } from './Homes';
 import { Experiences } from './Experiences';
+import { Experience } from './Experience';
 import './Explore.css';
 
 export const Explore = props => {
@@ -13,15 +14,17 @@ export const Explore = props => {
 
   const pushExperiencesPage = event => props.navigator.pushPage({ component: Experiences, props: { key: 'experiences' } });
 
+  const pushExperiencePage = event => props.navigator.pushPage({ component: Experience, props: { key: 'experience' } });
+
   const renderExperiences = () => Array(4).fill(
-    <div className="item">
+    <div className="item" onClick={pushExperiencePage}>
       <img src={"https://placeimg.com/720/480/nature?9"} style={{ width: '100%' }} alt="experiences" />
-      <span style={{ fontSize: 10 }}>AMSTERDAM</span>
+      <span style={{ fontSize: 10 }}>FOOD AND DRINKS • AMSTERDAM</span>
       <br />
       <span style={{ fontWeight: 'bold' }}>Beer Walking Tour</span>
       <br />
       <span>$80 per night</span>
-    </div>
+    </div >
   );
 
   const renderHomes = () => Array(4).fill(
