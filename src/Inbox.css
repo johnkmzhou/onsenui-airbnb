@@ -1,0 +1,25 @@
+.inbox-bg {
+  background-image: url('https://placeimg.com/480/720/people?1');
+  height: 100%;
+  position: relative;
+}
+
+.inbox-title {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  left: 20px;
+  top: 20px;
+  position: absolute;
+}
+
+.inbox-box {
+  background-color: white;
+  left: 0;
+  margin: 440px auto 0 auto;
+  right: 0;
+  padding: 0 20px 20px 20px;
+  position: absolute;
+  text-align: center;
+  width: 300px;
+}

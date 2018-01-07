@@ -7,6 +7,7 @@ import 'onsenui/css/onsen-css-components.css';
 import { Explore } from './Explore';
 import { Saved } from './Saved';
 import { Trips } from './Trips';
+import { Inbox } from './Inbox';
 
 export const AppTabbar = props => {
   const renderTabs = navigator => [
@@ -23,7 +24,7 @@ export const AppTabbar = props => {
       tab: <Tab key="trips" label="Trips" icon="md-airplane" />
     },
     {
-      content: <Page key="inbox" navigator={props.navigator} />,
+      content: <Inbox key="inbox" navigator={props.navigator} />,
       tab: <Tab key="inbox" label="Inbox" icon="md-comment-outline" />
     },
     {
