@@ -8,6 +8,7 @@ import { Explore } from './Explore';
 import { Saved } from './Saved';
 import { Trips } from './Trips';
 import { Inbox } from './Inbox';
+import { Profile } from './Profile';
 
 export const AppTabbar = props => {
   const renderTabs = navigator => [
@@ -28,7 +29,7 @@ export const AppTabbar = props => {
       tab: <Tab key="inbox" label="Inbox" icon="md-comment-outline" />
     },
     {
-      content: <Page key="profile" navigator={props.navigator} />,
+      content: <Profile key="profile" navigator={props.navigator} />,
       tab: <Tab key="profile" label="Profile" icon="md-account-o" />
     }
   ];
